@@ -1,0 +1,20 @@
+.banner {
+    position: relative;
+    padding: 0 0 50px;
+    background-image: url('../../../Assets/2.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px; /* Set a height for the banner */
+  }
+  
+  .inner-bannertxt {
+    position: absolute;
+    top: 50%;
+    left: 10%; /* 20px from the left */
+    transform: translateY(-50%); /* Center vertically */
+    color: white; /* Adjust text color for visibility */
+  }
+  .inner-bannertxt .h1title {
+    color: #513f38;
+    text-shadow: 2px 0px 2px #000;
+}

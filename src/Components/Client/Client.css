@@ -1,0 +1,15 @@
+
+  .client-section {
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url('../../Assets/client-bg.webp');
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0; /* Padding for top and bottom */
+  }
+  
+  .client-logo {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Center the logos */
+  }
+  

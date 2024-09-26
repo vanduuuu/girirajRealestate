@@ -1,0 +1,83 @@
+
+.aboutOuter1 .row{
+padding-top:60px;
+margin:auto;
+justify-content: center;
+align-items: center;
+}
+.aboutOuter1 img{
+    width:80%;
+    background-position: bottom;
+}
+.aboutOuter2 {
+    position: relative; /* Ensure relative positioning for child elements */
+    /* background-image: url('../../Assets/sustainable.jpg'); */
+    background-image: 
+        linear-gradient(to right, #c79258, rgba(0, 0, 0, 0.89)), 
+        url('../../Assets/sustainable.jpg');
+        color:white
+}
+.abtOuter3{
+    background-image: url('../../Assets/16.png');
+    padding:60px;
+}
+.award{
+    padding:40px 5px;
+}
+.container-fixed {
+    overflow: hidden; /* Hide overflow from the skewed elements */
+}
+
+.row {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow items to wrap */
+}
+
+/* Common styles for a1 and a2 */
+.a1, .a2 {
+    flex: 1;
+    width: 100%; /* Default to full width */
+    position: relative; /* Positioning for absolute children */
+    overflow: hidden; /* Hide overflow */
+}
+
+.a1 {
+    transform: skewX(-32deg);
+    border-right: 20px solid white;
+    background-color: #CC935C;
+}
+
+.a2 {
+    transform: skewX(-32deg);
+}
+
+/* Adjust text inside a1 */
+.a1 .abt-inner, .a2 .abt-inner {
+    transform: skewX(32deg); /* Adjust to counter the skew */
+    margin: 0; /* Reset margin */
+    padding: 20px; /* Optional padding */
+    text-align: center; /* Center text */
+}
+.abt-inner p {
+    color:rgba(0, 0, 0, 0.76);
+    font-weight: 500;
+}
+.abt-inner span{
+    color:#ee9638;
+    font-size: 20px;
+}
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) { /* Tablet and mobile screens */
+    .row {
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .a1, .a2 {
+        border-right: none; /* Remove the right border on mobile */
+        transform: skewX(0); /* Reset skew for mobile */
+    }
+
+    .a1 .abt-inner {
+        transform: skewX(0); /* Reset skew on text */
+    }
+}

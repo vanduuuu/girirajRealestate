@@ -1,0 +1,88 @@
+/* Subnavbar.css */
+
+/* General header styling */
+#header {
+    background-color: #57453f;
+    /* background: linear-gradient(to right, white 50%, #57453f 50%); */
+    overflow: hidden;
+    background-image: url('../../../Assets/header-bg.png');
+}
+
+.navbar {
+    padding: 15px 0;
+    position: relative;
+}
+.nav-link {
+color:white!important;
+}
+/* For large screens */
+@media (min-width: 993px) {
+    .navbar-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .navbar-nav {
+        display: flex;
+        align-items: center;
+        margin: 0;
+    }
+
+    .navbar-nav li {
+        margin: 0 15px;
+    }
+
+    .collapse {
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo {
+        width: 150px; /* Adjust size as needed */
+        height: auto;
+        border-radius: 50%;
+        border: 5px solid white;
+    }
+}
+
+/* For small screens */
+@media (max-width: 992px) {
+    .navbar-toggler {
+        margin-left: auto; /* Align toggler to the right */
+    }
+
+    .navbar-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between; /* Space between items */
+    }
+
+    .logo-container {
+        margin-right: 15px; /* Space between logo and toggler */
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 15px; /* Add padding to avoid content sticking to the top */
+        width: 100%;
+    }
+
+    .navbar-nav li {
+        margin: 10px 0; /* Space out menu items */
+    }
+
+    .logo {
+        width: 120px; /* Adjust size as needed */
+        height: auto;
+        border-radius: 50%;
+        border: 5px solid white;
+    }
+
+    .collapse.show .navbar-nav {
+        display: flex;
+        justify-content: center;
+    }
+}

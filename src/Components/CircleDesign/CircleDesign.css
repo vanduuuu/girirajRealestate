@@ -1,0 +1,109 @@
+
+.C-wrapper{
+    position: relative;
+}
+.circleouter{
+    background-image: url('../../Assets/giriraj-down-bg.png');
+background-position:bottom;
+background-repeat: repeat-x;
+background-color: #55453f;
+}
+.circleouter section{
+    padding:100px
+
+}
+.big-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    margin: 0 auto;
+    position: relative; /* Allow content to be positioned relative to this circle */
+    border: 21px solid #ede2c0;;
+}
+
+.circles-wrapper {
+    position: absolute; /* Positioning to overlap the big circle */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centering */
+}
+
+.small-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #eaf1ee;
+    border: 2px solid #55453f;
+    color: #55453f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    position: absolute; /* Positioning small circles absolutely */
+}
+
+.left-circle {
+    left: -161px;
+    top: 63%;
+    transform: translateY(-145%);
+}
+
+.top-circle {
+    top: -46px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.right-circle {
+    right: -161px;
+    top: 50%;
+    transform: translateY(-139%);
+}
+
+.description-wrapper {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: space-between; /* Space out the descriptions */
+    margin-top: 200px; /* Add space below the circles */
+    color:white;
+    font-size: 20px;
+}
+
+.description {
+    width: 100px; /* Match the width of small circles */
+    text-align: center; /* Center the text */
+}
+
+.vision-description {
+    text-align: center; /* Centered below the Vision circle */
+}
+
+.mission-description {
+    text-align: center; /* Centered below the Mission circle */
+}
+
+.task-description {
+    text-align: center; /* Centered below the Task circle */
+}
+.description.mission-description {
+    position: absolute;
+    top: 78%;
+    left: 35%;
+    width: 30%;
+}
+.description.vision-description {
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    width: 30%;
+}
+.description.task-description {
+    position: absolute;
+    top: 15%;
+    right: 5%;
+    width: 30%;
+}

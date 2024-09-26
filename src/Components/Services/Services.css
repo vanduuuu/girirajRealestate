@@ -1,0 +1,10 @@
+
+.service-outer .banner{
+    background-image: linear-gradient(to right, #c79258, rgba(0, 0, 0, 0)), 
+    url('../../Assets/service-banner.jpg');
+    background-repeat: no-repeat;
+}
+.service-outer img{
+    position: absolute;
+    left: 45%;
+}

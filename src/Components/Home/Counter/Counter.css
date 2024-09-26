@@ -1,0 +1,20 @@
+.counter-outer{
+    background-color: #493a34;
+    padding:40px 0;
+    background-image: url('../../../Assets/header-bg.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+.counter-outer .card{
+    background-color: transparent;
+    color: white;
+    border-color: transparent;
+}
+.counter-outer .card:hover{
+    border-color:#efe2c2;
+}
+p.card-text {
+    font-size: 29px;
+    color: #efe2c2;
+    font-weight: 800;
+}

@@ -1,0 +1,62 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spicy+Rice&family=Yeseva+One&display=swap');
+.h1title {
+  font-size: 58px;
+  color: #55453f;
+  font-weight: 900;
+  font-family: "Yeseva One", serif;
+}
+.h2title{
+  font-size: 38px;
+  color: #55453f;
+  font-weight: 900;
+  font-family: "Yeseva One", serif;
+  text-transform: uppercase;
+  margin:20px 0;
+}
+.h2title span{
+  color:#af2f05
+}
+.smalltitle{
+  font-size: 50px;
+  color:#55453f;
+  font-family: "Yeseva One", serif;
+}
+.col-lg-6{
+  padding: 0!important;
+}
+.abt-sectionbg{
+  background-color: #eaf1ee;
+}
+.bgP,.bgPP {
+  background-color: #634d3d1f;
+  display: inline;
+  padding: 5px;
+  color: #af2f05;
+  font-weight: 700;
+  font-size: 18px;
+}
+.bgPP{
+display: block;
+}
+.greypara{
+  color:#787878;
+  font-size: 18px;
+}
+section{
+  padding:60px;
+}
+
+@media(max-width:600px){
+  .h1title {
+    font-size: 30px;
+    margin-top: 20px;}
+    .smalltitle {
+      font-size: 21px;
+      margin-top: 20px;}
+      section {
+        padding: 15px;
+    }
+
+}

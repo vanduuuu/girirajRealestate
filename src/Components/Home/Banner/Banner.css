@@ -1,0 +1,74 @@
+.left-div {
+    background-image: url('../../../Assets/hero-2-bg.jpg');
+    background-color: pink;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    align-items: center; /* Vertically centers content */
+    justify-content: flex-start; /* Aligns content to the left */
+    padding: 0 50px; /* Add horizontal padding */
+}
+
+.verticle-txt{
+    transform: rotate(-90deg) translateX(75%) translateY(437px);
+}
+.verticle-txt h5{
+    position: absolute;
+    color: #af2f05;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    display: inline-block;
+
+}
+.verticle-txt h5::after{
+    content: '';
+    height: 2px;
+    width: 83px;
+    display: block;
+    background-color: #af3005e3;
+    position: absolute;
+    top: 9px;
+    left: 102%;
+}
+.abt-quote{
+    padding:40px 20px;
+    position: relative;
+}
+.abt-quote::before {
+    content: "\f10d";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 3rem;
+    position: absolute;
+    left: -24px;
+    top: 9px;
+    color: #483a34;
+}
+.abt-quote::after {
+    content: "\f10e";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 3rem;
+    position: absolute;
+    right: -18px;
+    bottom: 26px;
+    color: #483a34;
+}
+@media(max-width:768px){
+    .verticle-txt {
+        transform: rotate(-90deg) translateX(75%) translateY(360px);
+    }
+}
+@media(max-width:600px){
+    .verticle-txt {
+        transform: rotate(-90deg) translateX(58%) translateY(142px);
+    }
+    .left-div {
+        padding: 45px 32px;
+    }
+ 
+}

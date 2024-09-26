@@ -1,0 +1,35 @@
+.video-container {
+    position: relative;
+    width: 100vw; /* Full viewport width */
+    height: 80vh; /* Allow height to adjust */
+    overflow: hidden; /* Hide overflow */
+  }
+  .carousel-caption {
+    top: 38%;
+    bottom:30%;
+  background-color: #00000075;}
+  .video-container video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw; /* Full viewport width */
+    height: auto; /* Maintain aspect ratio */
+    min-height: 100%; /* Ensure it covers the full height */
+    transform: translate(-50%, -50%); /* Center the video */
+  }
+  
+/* 
+  background-image: linear-gradient(rgb(221 14 14 / 60%), rgba(0, 0, 0, .6)), url(/_next/static/media/bg.3bdc7611.webp); */
+  @media (min-width: 600px) and (max-width: 1028px){
+    .video-container {
+      height: 51vh;
+  }
+  }
+  @media(max-width:600px){
+    .video-container {
+      height: 43vh;
+  }
+  .video-container video {
+    width: 206vw;}
+  }
+  
